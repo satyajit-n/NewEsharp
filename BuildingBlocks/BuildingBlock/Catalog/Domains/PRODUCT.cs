@@ -21,6 +21,7 @@ namespace BuildingBlock.Catalog.Domains
         [Column("image_url")]
         public string? ImageURL { get; set; }
 
+        [ForeignKey("CATEGORY")]
         [Column("category_Id")]
         public int? Category_Id { get; set; }
         public CATEGORY? CATEGORY { get; set; }
